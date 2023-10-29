@@ -215,7 +215,7 @@ footer .content {
   align-items: center;
 }
 /* Tablet*/
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (min-width: 1024px) and (max-width: 2732px) {
   #sign-up-section {
     background-size: cover contain;
     background-repeat: no-repeat;
@@ -253,7 +253,7 @@ footer .content {
 }
 /* Smartphone*/
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1170px) {
   html {
     font-size: 12px;
     font-family: "Roboto", monospace;
