@@ -214,43 +214,7 @@ footer .content {
   justify-content: space-between;
   align-items: center;
 }
-/* Tablet*/
-@media only screen and (min-width: 768px) and (max-width: 991px){
-  #sign-up-section {
-    background-size: cover contain;
-    background-repeat: no-repeat;
-    height: 28rem;
-  }
-  #sign-up-cta {
-    display: none;
-  }
-  .button-header {
-    display: inline;
-    list-style: none;
-    background-color: #9dc20a;
-    border: 1px solid gray;
-    padding: 0.5rem 1.5rem;
-    border-radius: 0.5rem;
-  }
-  .desktop-nav {
-    width: 65%;
-  }
-  #filters-section {
-    height: 28.4rem;
-  }
-  #quotes-section .content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-  .quote {
-    width: 75%;
-  }
-  #quotes-section .content img {
-    width: 15%;
-    height: 50%;
-  }
-}
+
 /* Smartphone*/
 
 @media only screen and (max-width: 767.98px) {
@@ -348,5 +312,42 @@ footer .content {
   }
   footer {
     font-size: 0.833rem;
+  }
+}
+/* Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  #sign-up-section {
+    background-size: cover contain;
+    background-repeat: no-repeat;
+    height: 28rem;
+  }
+  #sign-up-cta {
+    display: none;
+  }
+  .button-header {
+    display: inline;
+    list-style: none;
+    background-color: #9dc20a;
+    border: 1px solid gray;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+  }
+  .desktop-nav {
+    width: 65%;
+  }
+  #filters-section {
+    height: 28.4rem;
+  }
+  #quotes-section .content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .quote {
+    width: 75%;
+  }
+  #quotes-section .content img {
+    width: 15%;
+    height: 50%;
   }
 }
