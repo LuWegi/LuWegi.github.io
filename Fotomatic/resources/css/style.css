@@ -217,7 +217,7 @@ footer .content {
 
 /* Smartphone*/
 
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 767px) {
   html {
     font-size: 12px;
     font-family: "Roboto", monospace;
