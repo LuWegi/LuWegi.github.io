@@ -1,0 +1,352 @@
+:root {
+  --header-width: calc(100%-6rem);
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(226, 226, 226);
+}
+
+.logo {
+  color: #4a4a4a;
+  font-size: 1.5rem;
+  font-family: "Roboto-Mono", monospace;
+  text-decoration: none;
+  text-align: center;
+}
+header {
+  width: var(--header-width);
+  height: 5.3125rem;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  display: flex;
+  background-color: white;
+}
+.content-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.desktop-nav {
+  width: 35%;
+  display: flex;
+}
+.button-header {
+  display: none;
+}
+#header-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#header-list li {
+  list-style: none;
+}
+#header-list li a {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 1rem;
+  font-family: "Roboto", monospace;
+  line-height: 1.6;
+}
+.icon {
+  width: 1rem;
+  height: auto;
+}
+.mobile {
+  display: none;
+}
+#sign-up-section {
+  width: 100%;
+  height: 50rem;
+  background-image: url(../images/banner-landingpage.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+}
+#sign-up-cta {
+  background-color: #9dc20a;
+  border: 1px solid #979797;
+  border-radius: 0.25rem;
+  width: 36rem;
+  height: 22.5rem;
+  position: absolute;
+  left: 6.25rem;
+  color: white;
+  display: flex;
+  align-items: top;
+}
+.header {
+  text-align: center;
+  margin-top: 2rem;
+}
+.cursive {
+  font-family: "Satisfy", sans-serif;
+  font-size: 2.5rem;
+  margin: 0;
+}
+.striking {
+  font-size: 3.125rem;
+  font-family: "Rubik";
+  line-height: 1.4;
+  margin: 0;
+}
+.email {
+  text-align: center;
+  max-width: 60%;
+  margin: 0.75rem auto 1.625rem;
+  font-family: "Roboto", monospace;
+  line-height: 1.4;
+}
+
+#sign-up-cta .button {
+  background-color: #4a4a4a;
+  width: 25.5rem;
+  height: 4rem;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.25rem;
+  font-family: "Roboto", monospace;
+  line-height: 1.4;
+  margin: 1.625rem 5rem 3.5rem 5rem;
+}
+#features-section {
+  min-height: 42rem;
+  width: 95%;
+  margin: 4rem auto 2.875rem auto;
+  display: flex;
+  justify-content: center;
+}
+.feature {
+  min-height: 39.6875rem;
+  width: 40%;
+  background-color: white;
+  margin: 0 1.1875rem 2.875rem 1.1875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-center {
+  display: flex;
+  height: 65%;
+  justify-content: center;
+  align-items: flex-start;
+}
+.feature img {
+  width: 90%;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+.content {
+  text-align: center;
+  font-family: "Roboto", monospace;
+}
+.feature .content h2 {
+  font-size: 2rem;
+}
+.feature .content h3,
+#filters-section .content h3 {
+  font-weight: lighter;
+  max-width: 85%;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+#filters-section {
+  min-height: 42rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a4a4a;
+}
+.images-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.image-container {
+  width: 24.5%;
+  padding-bottom: 4rem;
+}
+.image-container img {
+  width: 100%;
+}
+
+#filters-section .content {
+  color: white;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+#filters-section .content h2 {
+  font-size: 2.25rem;
+}
+#quotes-section {
+  min-height: 11.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quotes-section span {
+  color: #4a4a4a;
+  font-size: 1.875rem;
+  font-style: italic;
+  line-height: 1.1;
+  margin-right: 1.875rem;
+}
+footer {
+  background-color: #4a4a4a;
+  font-size: 0.75rem;
+  color: white;
+  padding: 0 2rem;
+}
+footer .content {
+  min-height: 3.875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  #sign-up-section {
+    background-size: cover contain;
+    background-repeat: no-repeat;
+    height: 28rem;
+  }
+  #sign-up-cta {
+    display: none;
+  }
+  .button-header {
+    display: inline;
+    list-style: none;
+    background-color: #9dc20a;
+    border: 1px solid gray;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+  }
+  .desktop-nav {
+    width: 65%;
+  }
+  #filters-section {
+    height: 28.4rem;
+  }
+  #quotes-section .content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .quote {
+    width: 75%;
+  }
+  #quotes-section .content img {
+    width: 15%;
+    height: 50%;
+  }
+}
+/* Smartphone*/
+
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 12px;
+    font-family: "Roboto", monospace;
+  }
+  .desktop-nav,
+  .logo {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .mobile ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .button-header {
+    display: inline;
+    list-style: none;
+    background-color: #9dc20a;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+  }
+  .button-header a {
+    color: white;
+    text-decoration: none;
+  }
+  .mobile-list {
+    display: inline;
+    height: 80%;
+    width: 20%;
+  }
+  .mobile-list a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .mobile-list a img {
+    height: 60%;
+  }
+  #sign-up-section {
+    background-size: cover contain;
+    background-repeat: no-repeat;
+    height: 28rem;
+  }
+  #sign-up-cta {
+    display: none;
+  }
+  #features-section {
+    flex-wrap: wrap;
+  }
+  .feature {
+    width: 100%;
+  }
+  .feature .center {
+    height: 100%;
+    align-items: space-between;
+  }
+  .extra {
+    display: none;
+  }
+  .image-container {
+    width: 32.5%;
+  }
+  #quotes-section {
+    height: 30rem;
+  }
+  #quotes-section .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .quote {
+    width: 70%;
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+  .quote-citation {
+    width: 40%;
+    height: auto;
+    align-content: center;
+    margin-top: 4rem;
+  }
+  footer {
+    font-size: 0.833rem;
+  }
+}
