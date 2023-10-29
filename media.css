@@ -1,8 +1,1 @@
-@media (max-width:768px){
-ul {
-    grid-template-columns: 1fr;}
 
-
-nav{
-    display: none;
-}
